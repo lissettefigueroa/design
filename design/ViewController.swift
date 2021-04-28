@@ -12,12 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var changingImage: UIImageView!
 
     var imageList = [ #imageLiteral(resourceName: "Tails"),#imageLiteral(resourceName: "Heads") ]
-    @IBAction func Click(_ sender: UIButton) {
+    
+    @IBAction func Click(_ sender: Any) {
         
         let randomPosition = Int.random(in: 0...1)
         
         changingImage.image = imageList[randomPosition]
+        
     }
+
+    
 
 }
 

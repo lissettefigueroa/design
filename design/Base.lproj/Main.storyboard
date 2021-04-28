@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="401-dE-OXd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,49 +8,82 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="GUU-M9-ul4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="design" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="401-dE-OXd" customClass="ViewController" customModule="desgin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXI-3H-iac">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coin Flip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp5-Ee-Bnj">
-                                <rect key="frame" x="138" y="238" width="142" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <color key="textColor" red="1" green="0.8901960784313725" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oqq-PR-WQq">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvV-Kt-MWL">
-                                <rect key="frame" x="149" y="647" width="120" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Click Me">
-                                    <color key="titleColor" red="0.011764705882352941" green="0.31372549019607843" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZC-S7-cA3"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cyQ-xR-aNM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6O-CV-sHN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="293.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Flip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAk-zP-sNe">
+                                                <rect key="frame" x="137.5" y="120.5" width="139.5" height="52.5"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="37"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yAk-zP-sNe" firstAttribute="centerX" secondItem="e6O-CV-sHN" secondAttribute="centerX" id="VLo-TE-KZZ"/>
+                                            <constraint firstItem="yAk-zP-sNe" firstAttribute="centerY" secondItem="e6O-CV-sHN" secondAttribute="centerY" id="YK6-rr-7fu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-Z1-Sbk">
+                                        <rect key="frame" x="0.0" y="301.5" width="414" height="293"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-7K-I1P">
+                                                <rect key="frame" x="67" y="20" width="290" height="222"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UdL-7K-I1P" firstAttribute="centerY" secondItem="pbV-Z1-Sbk" secondAttribute="centerY" id="1Wd-H3-faG"/>
+                                            <constraint firstItem="UdL-7K-I1P" firstAttribute="centerX" secondItem="pbV-Z1-Sbk" secondAttribute="centerX" id="KH1-Is-hjE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-3w-4Gy">
+                                        <rect key="frame" x="0.0" y="602.5" width="414" height="293.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7F-v6-UUW">
+                                                <rect key="frame" x="152" y="128" width="110" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="W9Q-B1-zWq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                                <state key="normal" title="Click Me"/>
+                                                <connections>
+                                                    <action selector="Click:" destination="401-dE-OXd" eventType="touchUpInside" id="zh7-5C-eJw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="L7F-v6-UUW" firstAttribute="centerY" secondItem="lHX-3w-4Gy" secondAttribute="centerY" id="MBE-ig-ihy"/>
+                                            <constraint firstItem="L7F-v6-UUW" firstAttribute="centerX" secondItem="lHX-3w-4Gy" secondAttribute="centerX" id="XYC-qk-B7o"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.63921568627450975" green="0.8666666666666667" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mfd-mg-g43"/>
+                        <color key="backgroundColor" red="0.63921568630000003" green="0.86666666670000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cyQ-xR-aNM" firstAttribute="trailing" secondItem="mfd-mg-g43" secondAttribute="trailing" id="7eR-Rq-bPN"/>
+                            <constraint firstItem="cyQ-xR-aNM" firstAttribute="leading" secondItem="SXI-3H-iac" secondAttribute="leading" id="Rqd-jk-ydO"/>
+                            <constraint firstAttribute="bottom" secondItem="cyQ-xR-aNM" secondAttribute="bottom" id="rVc-Ah-4yG"/>
+                            <constraint firstItem="cyQ-xR-aNM" firstAttribute="top" secondItem="SXI-3H-iac" secondAttribute="top" id="yIS-1l-4Fd"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="changingImage" destination="oqq-PR-WQq" id="5cC-dH-SbC"/>
+                        <outlet property="changingImage" destination="UdL-7K-I1P" id="kF4-uR-m1v"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZT-k5-4be" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="89"/>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
-    </resources>
 </document>
